@@ -33,7 +33,7 @@ The workshop uses several, but not nearly all, of the components that are part o
 # Exercises
 
 - [Exercise 1 - Deploying a Machine Learning Model](01_Exercise_1_-_Deploying_a_Machine_Learning_Model.md)
-- [Exercise 2 - Setup Azure Data Factory](02_Exercise_2_-_Setup_Azure_Data_Factory.md)
+- [Exercise 2 - Setup Azure Components](02_Exercise_2_-_Setup_Azure_Components.md)
 - [Exercise 3 - Develop Data Factory Pipeline for Data Movement](03_Exercise_3_-_Develop_Data_Factory_Pipeline_for_Data_Movement.md)
 - [Exercise 4 - Operationalize ML Scoring with Azure ML and Data Factory](04_Exercise_4_-_Operationalize_ML_Scoring_with_Azure_ML_and_Data_Factory.md)
 - [Exercise 5 - Visualizing in Power BI Desktop](05_Exercise_5_-_Visualizing_in_Power_BI_Desktop.md)
