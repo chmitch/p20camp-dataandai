@@ -1,4 +1,7 @@
 # P20 Data & AI Hands on Experience
+
+This set of exercises is intended to give you some hands on experience with the Cortana Intelligence Suite, which makes includes much of the Azure Data and Analytics products.  Given the limited time we will restrict teh set of exercises to a single scenario that follows a set of data form acquisition to visualziation using several of the Cortana Intelligence Suite components.
+
 ![Screenshot](images/cis_header.png)
 
 # Workshop Scenario Overview
@@ -7,7 +10,7 @@ AdventureWorks Travel (AWT) provides concierge services for business travelers. 
 
 They are looking to pilot a web-app that their internal customer service agents can use to provide additional information useful to the traveler during the flight booking process. They want to enable their agents to enter in the flight information and produce a prediction as to if the departing flight will encounter a 15 minute or longer delay, taking into account the weather forecasted for the departure hour.
 
-In this workshop, attendees will build an end-to-end solution to predict flight delays taking into account the weather forecast.
+In this workshop, we will deploy the inital Machine Learning model and also do some batch scoring and visualization of flight delay data.
 
 # Workshop Architecture
 The workshop uses several, but not nearly all, of the components that are part of [Cortana Intelligence Suite](https://www.microsoft.com/en-us/cloud-platform/cortana-intelligence-suite). The goal is to show an end-to-end solution and not necessarily try to work in every component possible. The workshop architecture is below and includes:
