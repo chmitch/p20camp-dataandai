@@ -22,13 +22,17 @@ This exercise has 9 tasks:
     ![Screenshot](images/import_the_completed_predictive_experiment_into_your_workspace_1.png)
 1. After the copy operation finishes, the completed ML experiment will appear in your workspace.
 
+	![Screenshot](images/import_the_completed_predictive_experiment_into_your_workspace_2.png)
+
 ## Task 2: Examine the ML Experiment
+
 1.  We need to at least put some steps in here to show off what is done in the experiment.
 
 ## Task 3: Run the predictive experiment
-    ![Screenshot](images/import_the_completed_predictive_experiment_into_your_workspace_2.png)
+
 1. Run the experiment. This will take 5-7 minutes.
-1. At this point, you are now ready to return to and complete Exercise 1. The only task remaining is [Task 9](01_Exercise_1_-_Building_a_Machine_Learning_Model.md#task-9-deploy-web-service-and-note-api-information).
+
+    
 
 ## Task 4: Deploy Web Service and Note API Information
 
