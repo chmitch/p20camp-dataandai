@@ -4,10 +4,6 @@ Duration: 20 mins
 
 Synopsis: In this exercise, attendees will implement Azure Data Factory pipeline to copy data (.csv file) from on-premises server (lab virtual machine) to Azure Blob Storage. The goal of the exercise is to demonstrate data movement from an on-premises location to Azure Storage (via the Data Management Gateway). The attendee will see how these assets are created, deployed, executed, and monitored.
 
-## Get out of Jail Free
-
-If, for whatever reason, you cannot complete this lab whether due to time contraints or if you are not able to troubleshoot an issue, we have created a "get out of jail free" exercise. If you wish to use this exercise at any time, please proceed to [Appendix B](10_Appendix_B_-_Alternative_to_Data_Factory_Exercises.md). Please note that using this exercise will let you surpass all of the Azure Data Factory exercises. After completing Appendix B, you can continue to [Exercise 5](05_Exercise_5_-_Summarize_Data_Using_HDInsight_Spark.md).
-
 ## Task 1: Create Copy Pipeline Using the Copy Data Wizard
 
 1. Go the Azure Portal and select Azure Data Factory (ADF) Service you create in previous exercise.
