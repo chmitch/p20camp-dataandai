@@ -69,4 +69,5 @@ This exercise has 2 tasks:
 
     ![Screenshot](images/ex02_create_new_azure_data_factory_service_3.png)
 
-Next Exercise: [Exercise 3 - Develop Data Factory Pipeline for Data Movement](03_Exercise_3_-_Develop_Data_Factory_Pipeline_for_Data_Movement.md)
+Next Exercise: [Exercise 3 - Operationalize ML Scoring with Azure ML and Data Factory](03_Exercise_3_-_Operationalize_ML_Scoring_with_Azure_ML_and_Data_Factory.md)
+

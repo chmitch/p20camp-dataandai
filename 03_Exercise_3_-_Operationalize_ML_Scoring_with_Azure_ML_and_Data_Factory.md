@@ -1,4 +1,4 @@
-# Exercise 4: Operationalize ML Scoring with Azure ML and Data Factory
+# Exercise 3: Operationalize ML Scoring with Azure ML and Data Factory
 
 Duration: 20 mins
 
@@ -6,22 +6,46 @@ Synopsis: In this exercise, attendees will extend the Data Factory service to op
 
 This exercise has 5 tasks:
 
-* [Task 1: Create Azure ML Linked Service](#task-1-create-azure-ml-linked-service)
-* [Task 2: Create Azure ML Input Dataset](#task-2-create-azure-ml-input-dataset)
-* [Task 3: Create Azure ML Scored Dataset](#task-3-create-azure-ml-scored-dataset)
-* [Task 4: Create Azure ML Predictive Pipeline](#task-4-create-azure-ml-predictive-pipeline)
-* [Task 5: Monitor Your Pipeline Activities](#task-5-monitor-your-pipeline-activities)
+* [Task 1: Create Azure Storage Linked Service](#task-1-create-azure-storage-linked-service)
+* [Task 2: Create Azure ML Linked Service](#task-2-create-azure-ml-linked-service)
+* [Task 3: Create Azure ML Input Dataset](#task-3-create-azure-ml-input-dataset)
+* [Task 4: Create Azure ML Scored Dataset](#task-4-create-azure-ml-scored-dataset)
+* [Task 5: Create Azure ML Predictive Pipeline](#task-5-create-azure-ml-predictive-pipeline)
+* [Task 6: Monitor Your Pipeline Activities](#task-6-monitor-your-pipeline-activities)
 
-## Get out of Jail Free
 
-If, for whatever reason, you cannot complete this lab whether due to time contraints or if you are not able to troubleshoot an issue, we have created a "get out of jail free" exercise. If you wish to use this exercise at any time, please proceed to [Appendix B](10_Appendix_B_-_Alternative_to_Data_Factory_Exercises.md). Please note that using this exercise will let you surpass all of the Azure Data Factory exercises. After completing Appendix B, you can continue to [Exercise 5](05_Exercise_5_-_Summarize_Data_Using_HDInsight_Spark.md).
-
-## Task 1: Create Azure ML Linked Service
+## Task 1: Create Azure Storage Linked Service
 
 1. Go back to the **Azure Data Factory** service blade.
 2. Click on the **Author and deploy** from **Actions** section.
 
     ![Screenshot](images/create_azure_ml_linked_service_0.png)
+
+1. Click on **New data store
+
+    ![Screenshot](images/ex03_storage_linked_service_1.png)
+
+1. Click on **Azure Storage
+
+    ![Screenshot](images/ex03_storage_linked_service_1.png)
+
+1. In the new window, be sure change the JSON file to match the following:
+
+    ```json
+    {
+        "name": "AzureStorageLinkedService",
+        "properties": {
+            "type": "AzureStorage",
+            "description": "",
+            "typeProperties": {
+                "connectionString": "DefaultEndpointsProtocol=https;AccountName=p20dataandaistorage;AccountKey=AokDYBsLEt0jgFteM+9cyPIWNOUO4aVq/lqPIuu1Lv+8wO8cy7y1J6IyFGC9imhj3Mf1pg848AkVtO+Pf+s9sA=="
+            }
+        }
+    }
+    ```
+
+## Task 2: Create Azure ML Linked Service
+
 1. Click on **…More**.
 
     ![Screenshot](images/create_azure_ml_linked_service_1.png)
@@ -47,7 +71,7 @@ If, for whatever reason, you cannot complete this lab whether due to time contra
     ```
 1. Click **Deploy**.
 
-## Task 2: Create Azure ML Input Dataset
+## Task 3: Create Azure ML Input Dataset
 
 1. Click on **…More**.
 
@@ -64,10 +88,10 @@ If, for whatever reason, you cannot complete this lab whether due to time contra
         "properties": {
             "type": "AzureBlob",
             "external": true,
-            "linkedServiceName": "OutputLinkedService-AzureBlobStorage",
+            "linkedServiceName": "AzureStorageLinkedService",
             "typeProperties": {
                 "fileName": "FlightsAndWeather.csv",
-                "folderPath": "sparkcontainer",
+                "folderPath": "flightdata",
                 "format": {
                     "type": "TextFormat"
                 }
@@ -81,7 +105,7 @@ If, for whatever reason, you cannot complete this lab whether due to time contra
     ```
 1. Click Deploy.
 
-## Task 3: Create Azure ML Scored Dataset
+## Task 4: Create Azure ML Scored Dataset
 
 1. Click on **…More**.
 
@@ -97,10 +121,10 @@ If, for whatever reason, you cannot complete this lab whether due to time contra
         "name": "AzureBlobScoredDataOutPut",
         "properties": {
             "type": "AzureBlob",
-            "linkedServiceName": "OutputLinkedService-AzureBlobStorage",
+            "linkedServiceName": "AzureStorageLinkedService",
             "typeProperties": {
                 "fileName": "Scored_FlightsAndWeather.csv",
-                "folderPath": "sparkcontainer",
+                "folderPath": "flightdata",
                 "format": {
                     "type": "TextFormat"
                 }
@@ -114,7 +138,7 @@ If, for whatever reason, you cannot complete this lab whether due to time contra
     ```
 1. Click **Deploy**.
 
-## Task 4: Create Azure ML Predictive Pipeline
+## Task 5: Create Azure ML Predictive Pipeline
 
 1. Click on **…More**.
 
@@ -168,7 +192,7 @@ If, for whatever reason, you cannot complete this lab whether due to time contra
 1. Make sure to change the start to today's date and end to today + 1 date.
 2. Click **Deploy**.
 
-## Task 5: Monitor Your Pipeline Activities
+## Task 6: Monitor Your Pipeline Activities
 
 1. Close the current blade by clicking on the **X** from the top right corner of the blade.
 2. Click on the **Monitor &amp; Manage** from the **Actions** section.
@@ -178,4 +202,4 @@ If, for whatever reason, you cannot complete this lab whether due to time contra
 1. You should start to see **Ready** status activity listed on the bottom of the new window.
 2. Close the **Monitor &amp; Manage** browser tab.
 
-Next Exercise: [Exercise 5 - Summarize Data Using HDInsight Spark](05_Exercise_5_-_Summarize_Data_Using_HDInsight_Spark.md)
+Next [Exercise 4 - Develop Data Factory Pipeline for Data Movement](04_Exercise_4_-_Develop_Data_Factory_Pipeline_for_Data_Movement.md)
