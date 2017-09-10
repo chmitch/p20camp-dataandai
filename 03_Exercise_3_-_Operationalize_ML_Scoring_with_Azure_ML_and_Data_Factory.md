@@ -1,3 +1,4 @@
+
 # Exercise 3: Operationalize ML Scoring with Azure ML and Data Factory
 
 Duration: 20 mins
@@ -43,6 +44,7 @@ This exercise has 5 tasks:
         }
     }
     ```
+ 1. Click **Deploy**.
 
 ## Task 2: Create Azure ML Linked Service
 
