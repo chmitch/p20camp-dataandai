@@ -71,7 +71,7 @@ This exercise has 5 tasks:
         }
     }
     ```
-1. Click **Deploy**.
+1. Prior to Deploying, please ensure to delete **Optional** property values.  Now click **Deploy**.
 
 ## Task 3: Create Azure ML Input Dataset
 
