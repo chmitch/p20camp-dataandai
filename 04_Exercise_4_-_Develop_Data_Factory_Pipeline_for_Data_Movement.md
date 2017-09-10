@@ -1,4 +1,4 @@
-# Exercise 3: Develop Data Factory Pipeline for Data Movement
+# Exercise 4: Develop Data Factory Pipeline for Data Movement
 
 Duration: 20 mins
 
