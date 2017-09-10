@@ -36,7 +36,7 @@ This exercise has 9 tasks:
 
 ## Task 4: Deploy Web Service and Note API Information
 
-1. When the experiment is finished running, click **Deploy Web Service**. This will launch the web service deployment wizard.  Upon reaching the dashboard, you'll be presented with an option to view the **New Web Services Experience** as seen below.  Please select this link and you will subsequently be re-directed to Step 3 if you are a Microsoft domain user.
+1. When the experiment is finished running, click **Deploy Web Service**. This will launch the web service deployment wizard.  Upon reaching the dashboard, you'll be presented with an option to view the **New Web Services Experience** as seen below.  Please select this link and you will subsequently be re-directed to Step 4 if you are a Microsoft domain user.
 
 	![Screenshot](images/web_services_exp.png)
 
@@ -47,7 +47,7 @@ This exercise has 9 tasks:
 
 1. Scroll down and click the **Deploy** button. After deployment is completed, you will be taken to the web services **Quick Start** page for your new web service.
 
-    ![Screenshot](images/operationalize_the_experiment_20.png)
+    ![Screenshot](images/endpoint.png)
 1. From the **Quick Start** page, click the **Use Web Service** link.
 2. Click the Copy button for the **Primary key**, open a copy of Notepad, and paste the value in the editor.
 2. Click the Copy button for the **Request-Response** link. The URL will look something like the following:
