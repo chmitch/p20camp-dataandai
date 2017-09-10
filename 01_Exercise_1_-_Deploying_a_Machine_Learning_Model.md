@@ -48,7 +48,7 @@ This exercise has 9 tasks:
 1. Scroll down and click the **Deploy** button. After deployment is completed, you will be taken to the web services **Quick Start** page for your new web service.
 
     ![Screenshot](images/endpoint.png)
-1. From the **Quick Start** page, click the **Use Web Service** link.
+1. From the **Quick Start** page, click the **Use Endpoint** link.
 2. Click the Copy button for the **Primary key**, open a copy of Notepad, and paste the value in the editor.
 2. Click the Copy button for the **Request-Response** link. The URL will look something like the following:
     * https://ussouthcentral.services.azureml.net/subscriptions/[SOME_GUID]/services/[SOME_OTHER_GUID]/execute?api-version=2.0&format=swagger
@@ -59,4 +59,4 @@ This exercise has 9 tasks:
 
     ![Screenshot](images/operationalize_the_experiment_21.png)
 
-Next Exercise: [Exercise 2 - Setup Azure Data Factory](02_Exercise_2_-_Setup_Azure_Data_Factory.md)
+Next Exercise: [Exercise 2 - Setup Azure Components](02_Exercise_2_-_Setup_Azure_Components.md)
