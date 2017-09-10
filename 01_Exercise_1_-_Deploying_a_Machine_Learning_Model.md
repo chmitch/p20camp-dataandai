@@ -36,7 +36,9 @@ This exercise has 9 tasks:
 
 ## Task 4: Deploy Web Service and Note API Information
 
-1. When the experiment is finished running, click **Deploy Web Service [New]** (*not* **[Classic]**). This will launch the web service deployment wizard.
+1. When the experiment is finished running, click **Deploy Web Service**. This will launch the web service deployment wizard.  Upon reaching the dashboard, you'll be presented with an option to view the **New Web Services Experience** as seen below.  Please select this link and you will subsequently be re-directed to Step 3 if you are a Microsoft domain user.
+
+	![Screenshot](images/web_services_exp.png)
 
 1. You can leave the default name, select **Create new...** for **Price Plan** and then provide a **Plan Name** value. Finally, under **Monthly Plan Options** select **Standard DevTest**.
     1. **NOTE:**: If you have already created a DevTest plan, you will not be able to create another one. You can simply select the DevTest plan that was already created from the **Price Plan** dropdown box.
