@@ -135,7 +135,7 @@ This exercise has 5 tasks:
                 "frequency": "Hour",
                 "interval": 12
             }
-        }
+         }
     }
     ```
 1. Click **Deploy**.
@@ -201,7 +201,7 @@ This exercise has 5 tasks:
 3. Maximize the new window and you can see the diagram view of the data flow.
 
     ![Screenshot](images/monitor_your_pipeline_activities_0.png)
-1. You should start to see **Ready** status activity listed on the bottom of the new window.
+1. You should start to see **Ready** status activity listed on the bottom of the new window (May take a few minutes for status to turn Ready).
 2. Close the **Monitor &amp; Manage** browser tab.
 
 Next [Exercise 4 - Develop Data Factory Pipeline for Data Movement](04_Exercise_4_-_Develop_Data_Factory_Pipeline_for_Data_Movement.md)
