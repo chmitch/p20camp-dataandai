@@ -1,61 +1,41 @@
-# Exercise 6: Visualizing in Power BI Desktop
+# Exercise 5: Visualizing in Power BI Desktop
 
 Duration: 20 mins
 
-Synopsis: In this exercise, attendees will construct a report in Power BI Desktop Client that uses the map visualization to illustrate the predicted delays, using the data originally scored using Machine Learning, but summarized in a table using Spark on HDInsight.
+Synopsis: In this exercise, attendees will construct a report in Power BI Desktop Client that uses the map visualization to illustrate the predicted delays, using the data originally scored using Machine Learning, and stored in SQL Azure.
 
 This exercise has 4 tasks:
 
-* [Task 1: Connect to the Lab VM](#task-1-connect-to-the-lab-vm)
-* [Task 2: Connect to the HDInsight Spark Using Power BI Desktop](#task-2-connect-to-the-hdinsight-spark-using-power-bi-desktop)
+* [Task 1: Connect to the Azure SQL Database Using Power BI Desktop](#task-1-connect-to-the-azure-sql-dataabse-using-power-bi-desktop)
 * [Task 3: Create Power BI Report](#task-3-create-power-bi-report)
 
-## Task 1: Connect to the Lab VM
+## Task 1: Connect to the Azure SQL Database Using Power BI Desktop
 
-1. **NOTE:** If you are already connected to your Lab VM, skip to [Task 2](#task-2-connect-to-the-hdinsight-spark-using-power-bi-desktop).
-1. From the left side of the Azure portal, click on **All resources**.
-2. In the **Filter items...** box, type in **lab**.
-3. Select your lab VM. Keep in mind the name of the virtual machine will begin with the "app name" you provided when setting up this workshop environment (in the prerequisite deployment).
-2. At the top of the blade for your VM, click on **Connect**.
-
-    ![Screenshot](images/connect_to_the_lab_vm_1.png)
-
-3. Download and open the RDP file.
-1. When the **Remote Desktop Connection** screen appears, check the **Don't ask me again...** box and click on **Connect** button.
-
-    ![Screenshot](images/ex02_connect_to_the_lab_vm_2.png)
-
-1. Log in with the following credentials:
-   - User name: **cortana**
-   - Password: **Password.1!!**
-
-## Task 2: Connect to the HDInsight Spark Using Power BI Desktop
-
-1. Launch Power BI Desktop using the shortcut on the Desktop of the Lab VM.
+1. Launch Power BI Desktop.
 2. Click on **Get Data** from the left side of the welcome window.
 
     ![Screenshot](images/connect_to_the_hdinsight_spark_using_power_bi_desktop_0.png)
 
-1. Click on the **Azure** from the left and select **Azure HDInsight Spark (Beta)** from the new **Get Data** window. Click on the **Connect** button on the bottom right corner.
+1. Click on the **Azure** from the left and select **Azure SQL Database** from the new **Get Data** window. Click on the **Connect** button on the bottom right corner.
 
-    ![Screenshot](images/connect_to_the_hdinsight_spark_using_power_bi_desktop_1.png)
+    ![Screenshot](images/ex06_power_bi_1.png)
 
-1. Click **Continue** on the bottom right corner of the new window.
-2. Type or copy/paste the **URL** of your Azure HDInsight Spark cluster, which can be found from the address bar when connected to the Azure HDInsight Spark cluster in previous Exercise 5. It should look something like this example: [**https://jcholab199spark.azurehdinsight.net**](https://jcholab199spark.azurehdinsight.net).
-3. Click the **OK** button.
-4. When prompted, enter the cluster user name and password and then click **Connect**.
-   - User name: **cortana**
-   - Password: **Password.1!!**
+1. Enter the name of the server and database on the **SQL Server Database** screen.
 
-2. When the dialog box disappears, look for the **flightdelaysummary** in the list and check the box next to it.
+    ![Screenshot](images/ex06_power_bi_2.png)
 
-    ![Screenshot](images/connect_to_the_hdinsight_spark_using_power_bi_desktop_3.png)
+1. Switch the authentication mode to **Database**, and enter the username and password.
+2. Click **Continue** on the bottom right corner of the new window.
 
-2. Click on the **Load** button from the bottom right corner of the window. It will take couple of minutes to load the data into the Power BI Desktop client.
+    ![Screenshot](images/ex06_power_bi_3.png)
 
-## Task 3: Create Power BI Report
+1. Click the **ScoredFlightData** table, and click **Load**.
 
-1. Once the data load is completed, you will find the **flightdelaysummary** to the right side of the screen under the **Fields** area.
+    ![Screenshot](images/ex06_power_bi_4.png)
+
+## Task 2: Create Power BI Report
+
+1. Once the data load is completed, you will find the **ScoredFlightData** to the right side of the screen under the **Fields** area.
 
     ![Screenshot](images/create_power_bi_report_0.png)
 
