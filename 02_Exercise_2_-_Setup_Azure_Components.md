@@ -15,7 +15,7 @@ This exercise has 2 tasks:
 1. Launch a new browser session and navigate to [https://portal.azure.com](https://portal.azure.com). Once prompted, log in with your Microsoft Azure credentials. If prompted, choose whether your account is an organization account or a Microsoft Account.  This will be based on which account was used to provision your Azure subscription that are using for these labs.
    - **Note** : You may need to launch an InPrivate/Incognito session in your browser if you have multiple Microsoft Accounts.
 
-## Task 2:  Create a SQL DB Account
+## Task 2: Create a SQL DB Account
 
 1. From left top corner of the Azure Portal, click on **+New**.
 
