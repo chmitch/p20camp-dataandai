@@ -42,9 +42,53 @@ This exercise has 2 tasks:
 
     ![Screenshot](images/ex02_creat_azure_sql_db_3.png)
  
-1. You've returned to the database blade.  You're done, click create.
+1. You've returned to the database blade.  You're done with the data entry, click create and wait a couple minutes for provisioning to finish.
 
     ![Screenshot](images/ex02_creat_azure_sql_db_4.png)
+
+1. Once the database has been created, open the resoruce in the portal.
+2. In the database overview blade click on "Tools".
+
+    ![Screenshot](images/ex02_creat_azure_sql_db_5.png)
+
+1. Select "Query Editor (preview)".
+
+    ![Screenshot](images/ex02_creat_azure_sql_db_6.png)
+
+1. Once you're into the query editor you'll need to authenticate to the database, click on the "Login" button.
+
+    ![Screenshot](images/ex02_creat_azure_sql_db_7.png)
+
+1. The admin account will be populated by default, enter your administrator password and login.
+2. You'll be in the query editory window now, enter the follwoing code: 
+
+    ```sql
+	CREATE TABLE ScoredFlightData
+	(
+		OriginAirportCode varchar(255)
+		,[Month] bigint
+		,DayofMonth bigint
+		,CRSDepHour bigint
+		,DayOfWeek bigint
+		,Carrier varchar(255)
+		,DestAirportCode varchar(255)
+		,DepDel15 bigint
+		,WindSpeed float
+		,SeaLevelPressure float
+		,HourlyPrecip float
+		,ScoredLabels bigint
+		,ScoredProbabilities float
+		,OriginLatitude float
+		,OriginLongitude float
+	)
+
+    ```
+1. Click "Run".
+
+    ![Screenshot](images/ex02_creat_azure_sql_db_8.png)
+
+1. TODO:  Enter steps for opening ports on the SQL firewall.
+
 
 ## Task 3: Create new Azure Data Factory Service
 
