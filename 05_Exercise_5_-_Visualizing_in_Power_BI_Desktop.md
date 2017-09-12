@@ -7,7 +7,7 @@ Synopsis: In this exercise, attendees will construct a report in Power BI Deskto
 This exercise has 4 tasks:
 
 * [Task 1: Connect to the Azure SQL Database Using Power BI Desktop](#task-1-connect-to-the-azure-sql-dataabse-using-power-bi-desktop)
-* [Task 3: Create Power BI Report](#task-3-create-power-bi-report)
+* [Task 2: Create Power BI Report](#task-2-create-power-bi-report)
 
 ## Task 1: Connect to the Azure SQL Database Using Power BI Desktop
 
@@ -43,9 +43,9 @@ This exercise has 4 tasks:
 
     ![Screenshot](images/create_power_bi_report_1.png)
 
-1. With the Map visualization still selected, in the **Fields** area at right, expand the tabled called **flightdelayssummary**.
+1. With the Map visualization still selected, in the **Fields** area at right, expand the tabled called **ScoredFlightData**.
 
-    ![Screenshot](images/create_power_bi_report_2.png)
+    ![Screenshot](images/create_power_bi_report_0.png)
 
 1. Click and drag the field labeled **OriginLatLong** and drop it into the **Location** field located just below visualizations.
 
@@ -64,7 +64,7 @@ This exercise has 4 tasks:
 
     ![Screenshot](images/create_power_bi_report_6.png)
 
-1. With the **Stacked Column Chart** visualization still selected, in the Fields area at right, expand the tabled called **flightdelayssummary**.
+1. With the **Stacked Column Chart** visualization still selected, in the Fields area at right, expand the tabled called **ScoredFlightData**.
 
     ![Screenshot](images/create_power_bi_report_7.png)
 
@@ -86,7 +86,7 @@ This exercise has 4 tasks:
 
     ![Screenshot](images/create_power_bi_report_11.png)
 
-1. With the **Treemap** visualization still selected, in the Fields area at right, expand the tabled called **flightdelayssummary**.
+1. With the **Treemap** visualization still selected, in the Fields area at right, expand the tabled called **ScoredFlightData**.
 
     ![Screenshot](images/create_power_bi_report_12.png)
 
@@ -108,4 +108,4 @@ This exercise has 4 tasks:
 
 1. You can save this Power BI report by click on Save icon from the top left corner of the screen.
 
-Next Exercise: [Exercise 7 - Deploy Intelligent Web App](07_Exercise_7_-_Deploy_Intelligent_Web_App.md)
+Next Exercise: [Exercise 6 - Cleanup of Azure Resources](06_Exercise_6_-_Cleanup_of_Azure_Resources.md)
