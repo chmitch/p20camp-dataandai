@@ -22,10 +22,10 @@ This exercise has 4 tasks:
 
 1. Enter the name of the server and database on the **SQL Server Database** screen.
 
-    ![Screenshot](images/ex06_power_bi_2.png)
+    ![Screenshot](images/ex06_power_bi_2a.png)
 
 1. Switch the authentication mode to **Database**, and enter the username and password.
-2. Click **Continue** on the bottom right corner of the new window.
+2. Select **Direct Query**, and click **Continue** on the bottom right corner of the new window.
 
     ![Screenshot](images/ex06_power_bi_3.png)
 
@@ -47,11 +47,12 @@ This exercise has 4 tasks:
 
     ![Screenshot](images/create_power_bi_report_0.png)
 
-1. Click and drag the field labeled **OriginLatLong** and drop it into the **Location** field located just below visualizations.
+1. Click and drag the field labeled **OriginLatitude** and drop it into the **Latitude** field.
+2. Click and drag the field labeled **OriginLongitude** and drop it into the **Longitude** field.
 
     ![Screenshot](images/create_power_bi_report_3.png)
 
-1. Next, drag the field labeled **NumDelays** and drop it into the **Size** field.
+1. Next, drag the field labeled **DepDel15** and drop it into the **Size** field.
 
     ![Screenshot](images/create_power_bi_report_4.png)
 
@@ -66,15 +67,19 @@ This exercise has 4 tasks:
 
 1. With the **Stacked Column Chart** visualization still selected, in the Fields area at right, expand the tabled called **ScoredFlightData**.
 
-    ![Screenshot](images/create_power_bi_report_7.png)
+    ![Screenshot](images/create_power_bi_report_0.png)
 
-1. Click and drag the field labeled **Day** and drop it into the **Axis** field located just below visualizations.
+1. Click and drag the field labeled **DayOfMonth** and drop it into the **Axis** field located just below visualizations.
 
     ![Screenshot](images/create_power_bi_report_8.png)
 
-1. Next, drag the field labeled **AvgDelayProbability** and drop it into the **Value** field.
+1. Next, drag the field labeled **ScoredProbability** and drop it into the **Value** field.
 
     ![Screenshot](images/create_power_bi_report_9.png)
+
+1. The default aggregation function is a Sum, which is a terrible aggregation for a percentage, click the error next to **ScoredProbability** to change its aggregation behavior to **Average**.
+
+    ![Screenshot](images/create_power_bi_report_9a.png)
 
 1. Grab the corner of the new **Stacked Column Chart** Visual and drag it out by making wide as the bottom of your report design surface.
 2. Your report should look something like the following:
@@ -88,13 +93,13 @@ This exercise has 4 tasks:
 
 1. With the **Treemap** visualization still selected, in the Fields area at right, expand the tabled called **ScoredFlightData**.
 
-    ![Screenshot](images/create_power_bi_report_12.png)
+    ![Screenshot](images/create_power_bi_report_0.png)
 
 1. Click and drag the field labeled **OriginAirportCode** and drop it into the **Group** field located just below visualizations.
 
     ![Screenshot](images/create_power_bi_report_13.png)
 
-1. Next, drag the field labeled **NumDelays** and drop it into the **Value** field.
+1. Next, drag the field labeled **DepDelay15** and drop it into the **Value** field.
 
     ![Screenshot](images/create_power_bi_report_14.png)
 
