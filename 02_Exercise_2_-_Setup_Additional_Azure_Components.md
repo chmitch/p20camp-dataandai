@@ -1,10 +1,10 @@
-# Exercise 2: Setup Azure Components
+# Exercise 2: Setup Additional Azure Components
 
-Duration: 20 mins
+Duration: 15 mins
 
-Synopsis: In this exercise, attendees will create a baseline environment for Azure Data Factory development for further operationalization of data movement and processing. They will create a Data Factory service and then install the Data Management Gateway which is the agent that facilitates data movement from on-premises to Microsoft Azure.
+Synopsis: In this exercise you will create a baseline environment for Azure Data Factory development for further operationalization of data movement and processing. You will create an Azure SQL Database, and a Data Factory service.
 
-This exercise has 2 tasks:
+This exercise has 3 tasks:
 
 * [Task 1: Log in to the Azure Portal](#task-1-log-in-to-the-azure-portal)
 * [Task 2: Create a SQL DB Account](#task-2-create-a-sql-db-account)
@@ -12,7 +12,7 @@ This exercise has 2 tasks:
 
 ## Task 1: Log in to the Azure Portal
 
-1. Launch a new browser session and navigate to [https://portal.azure.com](https://portal.azure.com). Once prompted, log in with your Microsoft Azure credentials. If prompted, choose whether your account is an organization account or a Microsoft Account.  This will be based on which account was used to provision your Azure subscription that are using for these labs.
+1. If you don't already have a portal session open, launch a new browser session and navigate to [https://portal.azure.com](https://portal.azure.com). Once prompted, log in with your Microsoft Azure credentials. If prompted, choose whether your account is an organization account or a Microsoft Account.  This will be based on which account was used to provision your Azure subscription that are using for these labs.
    - **Note** : You may need to launch an InPrivate/Incognito session in your browser if you have multiple Microsoft Accounts.
 
 ## Task 2: Create a SQL DB Account
