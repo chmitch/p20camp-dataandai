@@ -6,9 +6,9 @@ This set of exercises is intended to give you some hands on experience with the 
 
 # Workshop Scenario Overview
 
-AdventureWorks Travel (AWT) provides concierge services for business travelers. In an increasingly crowded market, they are always looking for ways to differentiate themselves and provide added value to their corporate customers.
+Greyjoy Travel Services provides concierge transportation services for Westerosi travelers. In an increasingly crowded market, they are always looking for ways to differentiate themselves and provide added value to their customers.
 
-They are looking to pilot a web-app that their internal customer service agents can use to provide additional information useful to the traveler during the flight booking process. They want to enable their agents to enter in the flight information and produce a prediction as to if the departing flight will encounter a 15 minute or longer delay, taking into account the weather forecasted for the departure hour.
+They are looking to pilot a web-app that their internal customer service agents can use to provide additional information useful to the traveler during the booking process. They want to enable their agents to enter in the flight information and produce a prediction as to if the departing flight will encounter a 15 minute or longer delay, taking into account the weather forecasted for the departure hour.
 
 In this workshop, we will deploy the inital Machine Learning model and also do some batch scoring and visualization of flight delay data.
 
