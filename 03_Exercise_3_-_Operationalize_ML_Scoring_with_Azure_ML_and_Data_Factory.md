@@ -22,11 +22,11 @@ This exercise has 5 tasks:
 
     ![Screenshot](images/create_azure_ml_linked_service_0.png)
 
-1. Click on **New data store
+1. Click on **New data store**
 
     ![Screenshot](images/ex03_storage_linked_service_1.png)
 
-1. Click on **Azure Storage
+1. Click on **Azure Storage**
 
     ![Screenshot](images/ex03_storage_linked_service_1.png)
 
@@ -44,6 +44,31 @@ This exercise has 5 tasks:
         }
     }
     ```
+1. Click **Deploy**.
+2. You now need to create the storage linked service for the destination file, Click on **New data store**
+
+    ![Screenshot](images/ex03_storage_linked_service_1.png)
+
+1. Click on **Azure Storage**
+
+    ![Screenshot](images/ex03_storage_linked_service_1.png)
+
+1. In the new window, be sure change the JSON file to match the following, replacing [ConnectionString] with a connection string from the storage account created in Exercise 1.
+
+    ![Screenshot](images/ex03_storage_linked_service_3.png)
+
+    ```json
+    {
+        "name": "AzureStorageLinkedService2",
+        "properties": {
+            "type": "AzureStorage",
+            "description": "",
+            "typeProperties": {
+                "connectionString": "[ConnectionString]"
+            }
+        }
+    }
+    ```
  1. Click **Deploy**.
 
 ## Task 2: Create Azure ML Linked Service
@@ -51,6 +76,7 @@ This exercise has 5 tasks:
 1. Click on **…More**.
 
     ![Screenshot](images/create_azure_ml_linked_service_1.png)
+
 1. Click on **New Compute**.
 
     ![Screenshot](images/create_azure_ml_linked_service_2.png)

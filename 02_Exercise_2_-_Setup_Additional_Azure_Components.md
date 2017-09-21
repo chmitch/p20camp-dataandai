@@ -87,7 +87,14 @@ This exercise has 3 tasks:
 
     ![Screenshot](images/ex02_create_azure_sql_db_8.png)
 
-1. TODO:  Enter steps for opening ports on the SQL firewall.
+1. Go back to the SQL Server Settings and click on the **Firewall** to setup client IP access. settings.
+    ![Screenshot](images/ex02_01.png)
+
+1. Click **Add Client IP**.
+    ![Screenshot](images/ex02_02.png)
+
+1. Click **Save**.
+    ![Screenshot](images/ex02_03.png)
 
 
 ## Task 3: Create new Azure Data Factory Service
