@@ -149,7 +149,7 @@ This exercise has 5 tasks:
         "name": "AzureBlobScoredDataOutPut",
         "properties": {
             "type": "AzureBlob",
-            "linkedServiceName": "AzureStorageLinkedService",
+            "linkedServiceName": "AzureStorageLinkedService2",
             "typeProperties": {
                 "fileName": "Scored_FlightsAndWeather.csv",
                 "folderPath": "flightdata",
