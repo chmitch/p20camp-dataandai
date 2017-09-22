@@ -1,6 +1,6 @@
 # P20 Data & AI Hands on Experience
 
-This set of exercises is intended to give you some hands on experience with the Cortana Intelligence Suite, which makes includes much of the Azure Data and Analytics products.  Given the limited time we will restrict teh set of exercises to a single scenario that follows a set of data form acquisition to visualziation using several of the Cortana Intelligence Suite components.
+This set of exercises is intended to give you some hands on experience with the Cortana Intelligence Suite, which makes includes much of the Azure Data and Analytics products.  Given the limited time we will restrict the set of exercises to a single scenario that follows a set of data form acquisition to visualziation using several of the Cortana Intelligence Suite components.
 
 ![Screenshot](images/cis_header.png)
 
